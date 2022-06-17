@@ -1,0 +1,148 @@
+@import url('https://fonts.google.com/specimen/Poppins#standard-styles');
+
+body{
+    background-image: url('bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container-grid{
+    display: grid;
+    height: 100vh;
+    justify-content: space-around;
+    align-content: center;
+    grid-auto-flow: column;
+    width: 100%;
+}
+.grid-item1{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+.grid-item2{
+    margin-right: 200px;
+    width: 100%;
+}
+.grid-2-1{
+    background-color: hsl(248, 32%, 49%);
+    width: 75%;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.grid-2-1 p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.grid-2-2{
+    background-color: white;
+    padding: 20px;
+    width: 69%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.try-free{
+    font-weight: 400;
+    font-size: 14px;
+}
+.input-div{
+    margin: 20px;
+}
+#first-name-label{
+    width: 93%;
+    height: 40px;
+}
+#last-name-label{
+    width: 93%;
+    height: 40px;
+}
+#email-label{
+    width: 93%;
+    height: 40px;
+}
+#password-label{
+    width: 93%;
+    height: 40px;
+}
+input[type="submit"]{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+}
+input[type="text"]{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 20px;
+}
+input[type="email"]{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 20px;
+}
+input[type="password"]{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 20px;
+}
+:placeholder-shown{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 20px;
+}
+p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.sumbit-div{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.bottom{
+    color: hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+.bottom span{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+.bottom-div{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: auto;
+        margin-left: 12%;
+        background-image: url('bg-intro-mobile.png');
+        overflow-x: hidden;
+    }
+    .container-grid{
+        grid-auto-flow: row;
+    }
+    .grid-item1{
+        align-self: flex-start;
+    }
+  }
